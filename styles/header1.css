@@ -1,0 +1,39 @@
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, black, rgb(98, 93, 93));
+    background-size: 400% 400%;
+    animation: gradientAnimation 5s ease infinite;
+  }
+  
+  /* Title Styling */
+  .title {
+    font-size: 4rem;
+    color: rgb(39, 38, 38);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Hover Animation */
+  .title:hover {
+    transform: scale(1.1);
+    color: #e6ece9; 
+  }
+  
+  /* Background Gradient Animation */
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
